@@ -1,0 +1,28 @@
+.topicos{
+    background: var(--azul-degrade);
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
+.topico-titulo{
+    font-size: 18px;
+    padding:2em;
+}
+.topico-lista{
+    display: flex;
+    padding: 0.5em 0;
+    font-weight: 400;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.topico-lista a{
+    text-decoration: none;
+    color: var(--branco);
+}
+.topico-lista-itens{
+    background-color: var(--laranja);
+    padding: 1em 1.5em;
+    margin: 0.5em;
+}

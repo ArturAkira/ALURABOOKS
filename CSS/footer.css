@@ -1,0 +1,37 @@
+.footer{
+    padding: 2em;
+}
+.footer-titulo{
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+}
+.footer-texto{
+    color: var(--azul);
+    font-weight: 400;
+    margin: 1em 0 2em 0;
+
+}
+.cadastro-botao{
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+.cadastro-botao::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--azul);
+    background: url(../IMG/Email.svg) no-repeat;
+    background-position: 1em;
+    padding-left: 3em;
+}
+.grupo-alura{
+    border-top: solid 1px;
+    padding: 2em;
+    font-size: 18px;
+    font-weight: 400;
+}

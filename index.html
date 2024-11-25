@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;0,500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">    
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                 <span class="cabeçalho__menu-hamburguer"></span>
+            </label>
+           
+            <ul class="lista-menu container_botao">
+                <li class="lista-menu_titulo">Categorias</li>
+                <li class="lista-menu_item"><a href="">Programação</a></li>
+                <li class="lista-menu_item"><a href="">Front-end</a></li>
+                <li class="lista-menu_item"><a href="">Infraestrutura</a></li>
+                <li class="lista-menu_item"><a href="">Busuiness</a></li>
+                <li class="lista-menu_item"><a href="">Design & UX</a></li>
+            </ul>
+            <img src="IMG/Logo.svg" alt="Logo da Alura Books">
+        </div>
+        
+        <div class="container">
+            <a href="#"><img src="IMG/Favoritos.svg" alt="Favoritos"></a>
+            <a href="#"><img src="IMG/Compras.svg" alt="Compras"></a>
+            <a href="#"><img src="IMG/Usuário.svg" alt="Usuário"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+        <p class="banner_texto">Encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
+        <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Novos lançamentos</h2>
+        <div class="swiper">
+             <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="IMG/ApacheKafka.svg" alt="Livro sobre Apache Kafka Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Liderança.svg" alt="Livro sobre liderança Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Javascript.svg" alt="Livro sobre Javascript"></div>
+              <div class="swiper-slide"><img src="IMG/Gestão2.svg" alt="Livro sobre gestão Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/ReactNative.svg" alt="Livro sobre React Native Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Nodejs.svg" alt=""></div>
+              ...
+            </div>
+           
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+
+          <div class="card">
+            <div class="card_descrição">
+                <div class="descrição">
+                    <h3 class="descrição_titulo">Talvez você se interesse por...</h3>
+                    <h2 class="descrição_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descrição-texto">Construindo uma aplicação integrada com a plataforma Google.</p>
+                </div>
+                <img src="IMG/Angular.svg" alt="" class="descrição-imagem">
+            </div>
+            <div class="card_botao">
+                <ul class="botoes">
+                    <li class="botoes-itens"><img src="IMG/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes-itens"><img src="IMG/Compras.svg" alt="adicionar ao carrinho"></li>
+                </ul>
+                <a href="#" class="botoes-ancora">Saiba mais</a>
+            </div>
+          </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais vendidos</h2>
+        <div class="swiper">
+             <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="IMG/ApacheKafka.svg" alt="Livro sobre Apache Kafka Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Liderança.svg" alt="Livro sobre liderança Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Javascript.svg" alt="Livro sobre Javascript"></div>
+              <div class="swiper-slide"><img src="IMG/Gestão2.svg" alt="Livro sobre gestão Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/ReactNative.svg" alt="Livro sobre React Native Alurabooks"></div>
+              <div class="swiper-slide"><img src="IMG/Nodejs.svg" alt=""></div>
+              ...
+            </div>
+           
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+
+          <div class="card">
+            <div class="card_descrição">
+                <div class="descrição">
+                    <h3 class="descrição_titulo"><img src="IMG/Estrelinhas.svg" alt=""><br>Autora do mês</h3>
+                    <h2 class="descrição_titulo-livro">Juliana Agarikov</h2>
+                    <p class="descrição-texto">Analista de sistemas e escritora, Juliana é espacialista em Front-end.</p>
+                </div>
+                <img src="IMG/Perfil-escritora 1.svg" alt="" class="descrição-imagem">
+            </div>
+            <div class="card_botao">
+                <ul class="botoes">
+                    <li class="botoes-itens"><img src="IMG/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes-itens"><img src="IMG/Compras.svg" alt="adicionar ao carrinho"></li>
+                </ul>
+                <a href="#" class="botoes-ancora">Saiba mais</a>
+            </div>
+          </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topico-titulo">Tópicos visitados recentemente</h2>
+        <div class="topico-itens">
+            <ul class="topico-lista">
+                <li class="topico-lista-itens"><a href="#">Android</a></li>
+                <li class="topico-lista-itens"><a href="#">Marketing Digital</a></li>
+                <li class="topico-lista-itens"><a href="#">Agile</a></li>
+                <li class="topico-lista-itens"><a href="#">Startups</a></li>
+                <li class="topico-lista-itens"><a href="#">HTML e CSS</a></li>
+                <li class="topico-lista-itens"><a href="#">Python</a></li>
+                <li class="topico-lista-itens"><a href="#">OO</a></li>
+                <li class="topico-lista-itens"><a href="#">Java</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h2 class="footer-titulo">Fique por dentro das novidades!</h2>
+            <p class="footer-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" class="cadastro-botao" placeholder="Cadastre seu email"></input>
+        </div>
+        
+        <div class="grupo-alura">
+            <h2>Grupo Alura</h2>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:{
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        })
+    </script>
+</body>
+</html>
