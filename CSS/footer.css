@@ -35,3 +35,64 @@
     font-size: 18px;
     font-weight: 400;
 }
+.lista-rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .lista-rodape{
+        display: block;
+    }
+    .cadastro-botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .contato{
+        width: 30%;
+        margin-left: 1em;
+    }
+    .footer-titulo{
+        font-size: 24px;
+    }
+    .contato_texto{
+        width:30%;
+    }
+    .grupo-alura{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lista-rodape_titulo{
+        color: var(--cinza-calor);
+        font-size: 14px;
+    }
+    .lista-rodape_item{
+        align-items: center;
+        display: flex;
+        margin: 0.6em 0;
+    }
+    .lista-rodape_item a{
+        text-decoration: none;
+        color: var(--cinza);
+        margin-left: 0.6em;
+    }
+    .grupo-alura{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .footer{
+        padding: 3em 20vw;
+    }
+    .lista-rodape{
+        border-left: solid 1px var(--cinza-calor);
+        padding-left: 1em;
+    }
+    .grupo-alura{
+        padding: 3em 0;
+    }
+}
